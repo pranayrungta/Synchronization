@@ -1,0 +1,32 @@
+echo 
+echo "Submitting jobs..."
+echo 
+
+echo "Compiling Program 1 : DSF_spt.cpp " 
+icpc -std=c++11 DSF_spt.cpp -o DSF_spt.run 
+nohup ./DSF_spt.run >& DSF_spt.out & 
+echo "1 job submitted" 
+echo " " 
+
+echo "Compiling Program 2 : ring_spt.cpp " 
+icpc -std=c++11 ring_spt.cpp -o ring_spt.run 
+nohup ./ring_spt.run >& ring_spt.out & 
+echo "2 job submitted" 
+echo " " 
+
+echo "Compiling Program 3 : SWD_spt.cpp " 
+icpc -std=c++11 SWD_spt.cpp -o SWD_spt.run 
+nohup ./SWD_spt.run >& SWD_spt.out & 
+echo "3 job submitted" 
+echo " " 
+
+echo "Compiling Program 4 : SWS_spt.cpp " 
+icpc -std=c++11 SWS_spt.cpp -o SWS_spt.run 
+nohup ./SWS_spt.run >& SWS_spt.out & 
+echo "4 job submitted" 
+echo " " 
+
+
+echo
+echo "Done!!!" 
+echo
